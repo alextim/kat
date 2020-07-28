@@ -83,22 +83,6 @@ module.exports = async ({ graphql, actions, reporter }) => {
             }
           }
         }
-        organization: yaml(fields: { type: { eq: "contacts" } }) {
-          email
-          fax
-          geo {
-            latitude
-            longitude
-          }
-          voice {
-            phone
-            skype
-            telegram
-            viber
-            whatsapp
-          }
-          openingHours
-        }
       }
     `),
   );
@@ -169,7 +153,6 @@ module.exports = async ({ graphql, actions, reporter }) => {
           footerNavItems: footerNavItems[locale],
           socialLinks: socialLinks[locale],
         },
-        organization: result.data.organization,
       },
     });
   });

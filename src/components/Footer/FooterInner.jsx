@@ -9,7 +9,7 @@ import FooterNavigation from './FooterNavigation';
 import LegalInfo from './LegalInfo';
 
 import { useTranslation } from '../../i18n';
-import { useLocale } from '../../i18n/i18n-context';
+import useOrganization from '../../hooks/useOrganization';
 
 import OrganizationPostalAddress from '../organization/OrganizationPostalAddress';
 import OrganizationEmail from '../organization/OrganizationEmail';
@@ -65,9 +65,7 @@ const styleColophonBottom = {
 
 const FooterInner = () => {
   const { t } = useTranslation();
-  const {
-    organization: { email, voice },
-  } = useLocale();
+  const { email, voice } = useOrganization();
   return (
     <React.Fragment>
       <Container sx={styleWidgetArea}>

@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import useSocialLinks from '../../hooks/useSocialLinks';
 import config from '../../../config/website';
 import { useLocale } from '../../i18n/i18n-context';
+import useOrganization from '../../hooks/useOrganization';
 
 import i18n, { useTranslation } from '../../i18n';
 
@@ -11,7 +12,8 @@ const removeTrailingSlash = (s) => s.replace(/\/$/, '');
 
 const SEO = ({ title, description, locale, pathname, canonical, noindex = false, metas = [] }) => {
   const socialLinks = useSocialLinks();
-  const { address, organization } = useLocale();
+  const { address } = useLocale();
+  const organization = useOrganization();
   const { t } = useTranslation();
 
   const article = false;

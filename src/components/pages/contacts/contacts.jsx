@@ -5,7 +5,8 @@ import { useTranslation } from '../../../i18n';
 
 import ContactForm from './ContactForm';
 
-import { useLocale } from '../../../i18n/i18n-context';
+import useOrganization from '../../../hooks/useOrganization';
+
 import OrganizationPostalAddress from '../../organization/OrganizationPostalAddress';
 import OrganizationPhones from '../../organization/OrganizationPhones';
 import OrganizationEmail from '../../organization/OrganizationEmail';
@@ -71,9 +72,7 @@ const ContactFormWrapper = styled.div`
 
 const Contact = () => {
   const { t } = useTranslation();
-  const {
-    organization: { email, voice, openingHours },
-  } = useLocale();
+  const { email, voice, openingHours } = useOrganization();
 
   return (
     <>
