@@ -30,7 +30,7 @@ module.exports = {
 
   googleAnalyticsID: 'XXXXXX',
 
-  // Manifest
+  /* Manifest */
   themeColor: '#3498DB',
   backgroundColor: '#2e3246',
 };

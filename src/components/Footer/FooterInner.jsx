@@ -2,20 +2,20 @@
 import React from 'react';
 import { jsx } from 'theme-ui';
 
-import Container from '../../Container';
+import Container from '../Container';
 import FooterWidget from './FooterWidget';
 import SocialLinks from './SocialLinks';
 import FooterNavigation from './FooterNavigation';
 import LegalInfo from './LegalInfo';
 
-import { useTranslation } from '../../../i18n';
-import { useLocale } from '../../../i18n/i18n-context';
+import { useTranslation } from '../../i18n';
+import { useLocale } from '../../i18n/i18n-context';
 
-import OrganizationPostalAddress from '../../organization/OrganizationPostalAddress';
-import OrganizationEmail from '../../organization/OrganizationEmail';
-import OrganizationSite from '../../organization/OrganizationSite';
-import OrganizationPhones from '../../organization/OrganizationPhones';
-import OrganizationCloudPhones from '../../organization/OrganizationCloudPhones';
+import OrganizationPostalAddress from '../organization/OrganizationPostalAddress';
+import OrganizationEmail from '../organization/OrganizationEmail';
+// import OrganizationSite from '../organization/OrganizationSite';
+import OrganizationPhones from '../organization/OrganizationPhones';
+// import OrganizationCloudPhones from '../organization/OrganizationCloudPhones';
 
 const styleWidgetArea = {
   display: 'flex',
@@ -86,15 +86,15 @@ const FooterInner = () => {
         <WidgetWrapper extraStyle={styleWidgetAddr1}>
           <FooterWidget title={t('footer.our_address')}>
             <OrganizationPostalAddress />
-            <OrganizationEmail email={email} />
-            <OrganizationSite />
           </FooterWidget>
         </WidgetWrapper>
 
         <WidgetWrapper extraStyle={styleWidgetAddr2}>
           <FooterWidget title={t('footer.call_us')}>
             <OrganizationPhones phones={voice.phone} />
-            <OrganizationCloudPhones voice={voice} />
+            <OrganizationEmail email={email} />
+            {/* <OrganizationSite /> */}
+            {/* <OrganizationCloudPhones voice={voice} /> */}
           </FooterWidget>
         </WidgetWrapper>
       </Container>

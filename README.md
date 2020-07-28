@@ -394,14 +394,14 @@ _Remark: picture #2 has no author_
 
 ## TO-DO
 
-- [ ] Lerna
+- [ ] detect language
+- [ ] Lerna or workspaces
+- [ ] add firebase project and readne
 - [ ] TS
-- [ ] Strybook
+- [ ] Storybook
 - [ ] 404 - header and footer still in Ukranian only
-- [ ] netlify
 - [ ] gatsby-plugin-google-analytics
 - [ ] gatsby-plugin-offline
-- [ ] detect language
 - [ ] link - it has no styles in the text (displays properly in Contacts, but not in Services)
 - [ ] contact form - modal - add real Abort handler
 - [ ] logo is black in 'Dark Mode'

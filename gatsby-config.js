@@ -7,7 +7,7 @@ const i18n = require('./src/i18n/i18n');
 
 const config = require('./config/website');
 
-const manifestIcon = `${__dirname}/src/assets/images/icon.png`;
+const manifestIconSrc = `${__dirname}/src/assets/images/icon.png`;
 
 module.exports = {
   plugins: [
@@ -142,7 +142,7 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: 'standalone',
-        icon: manifestIcon,
+        icon: manifestIconSrc,
         localize: i18n.localeCodes
           .filter((code) => code !== i18n.defaultLang)
           .map((code) => {

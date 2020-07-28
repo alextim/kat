@@ -3,8 +3,8 @@ import React from 'react';
 import { jsx } from 'theme-ui';
 
 import GlobalStyle from '../GlobalStyle';
-import Header from './Header';
-import Footer from './Footer';
+import Header from '../Header/Header';
+import Footer from '../Footer';
 import Hero from '../Hero';
 
 const rootStyle = {

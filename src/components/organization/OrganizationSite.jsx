@@ -5,11 +5,11 @@ import Utils from '../../lib/utils';
 import IconLink from '../IconLink';
 import extraPadding from './extraPadding';
 
-import { siteUrl } from '../../../config/website';
-// import useSiteMetadata from '../../hooks/useSiteMetadata';
+// import { siteUrl } from '../../../config/website';
+import useSiteMetadata from '../../hooks/useSiteMetadata';
 
 const OrganizationSite = () => {
-  // const { siteUrl } = useSiteMetadata();
+  const { siteUrl } = useSiteMetadata();
   const hostName = Utils.extractHostname(siteUrl);
 
   return (

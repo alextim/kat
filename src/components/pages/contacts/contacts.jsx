@@ -9,7 +9,7 @@ import { useLocale } from '../../../i18n/i18n-context';
 import OrganizationPostalAddress from '../../organization/OrganizationPostalAddress';
 import OrganizationPhones from '../../organization/OrganizationPhones';
 import OrganizationEmail from '../../organization/OrganizationEmail';
-import OrganizationSite from '../../organization/OrganizationSite';
+// import OrganizationSite from '../../organization/OrganizationSite';
 import OrganizationCloudPhones from '../../organization/OrganizationCloudPhones';
 import OrganizationOpeningHours from '../../organization/OrganizationOpeningHours';
 
@@ -91,7 +91,7 @@ const Contact = () => {
         <Card title={t('contacts.call_us')}>
           <OrganizationPhones phones={voice.phone} />
           <OrganizationEmail email={email} />
-          <OrganizationSite />
+          {/* <OrganizationSite /> */}
         </Card>
 
         <Card title=" ">

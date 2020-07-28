@@ -2,10 +2,10 @@
 import { jsx } from 'theme-ui';
 
 import SocialLink from './SocialLink';
-import Utils from '../../../lib/utils';
-import useSocialLinks from '../../../hooks/useSocialLinks';
+import Utils from '../../lib/utils';
+import useSocialLinks from '../../hooks/useSocialLinks';
 
-import Icon from '../../Icon';
+import Icon from '../Icon';
 
 const wrapStyle = {
   display: 'inline-flex',

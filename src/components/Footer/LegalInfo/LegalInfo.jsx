@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { useLocale } from '../../../../i18n/i18n-context';
-import i18n, { useTranslation } from '../../../../i18n';
+import { useLocale } from '../../../i18n/i18n-context';
+import i18n, { useTranslation } from '../../../i18n';
 
 const LegalInfo = () => {
   const { locale } = useLocale();

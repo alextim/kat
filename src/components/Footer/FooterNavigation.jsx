@@ -2,7 +2,7 @@
 import { jsx } from 'theme-ui';
 import { Link } from 'gatsby';
 
-import useFooterNavItems from '../../../hooks/useFooterNavItems';
+import useFooterNavItems from '../../hooks/useFooterNavItems';
 
 const wrapStyle = {
   display: 'inline-flex',
