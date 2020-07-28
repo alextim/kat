@@ -32,8 +32,8 @@ MIT
 #### Fork Source Repository and clone it on local computer
 1. Login to your [GitHub account](https://github.com).
 1. In a browser open the source repository `https://github.com/alextim/kat`.
-1. Create fork from source repository - click `Fork` button  (in the right upper corner of window).
-1. After process finish click button `Code`.
+1. Create fork from source repository - click **Fork** button  (in the right upper corner of window).
+1. After process finish click button **Code**.
 1. Copy your repository URL.  
    It should be like this: `https://github.com/your-account-name/kat.git`.
 1. Lanch command prompt on your computer.  
@@ -54,16 +54,17 @@ git clone https://github.com/your-account-name/kat.git
    - Click **Install** on next dialog screen.
    - Enter your GitHub password.
 1. Then select repository `your-repository-name`.
-1. Check **Site settings**. `Publish directoty` field should to be set to `public\`.
-1. Click **Deploy site** button.  
+1. Check **Site settings**.  
+   **Publish directoty** field should to be set to `public\`.
+2. Click **Deploy site** button.  
    In few minutes your site will be live!
 
 ## Edit
 
 1. Edit your site locally with your favorite editor.
-1. Lanch command prompt on your computer.
-2. Goto repository folder with `cd` command.
-3. Commit your work and push changes to remote repository.
+2. Lanch command prompt on your computer.
+3. Goto repository folder with `cd` command.
+4. Commit your work and push changes to remote repository.
    Run the following commands in sequence:
 
 ```
