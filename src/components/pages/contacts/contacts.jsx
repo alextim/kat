@@ -72,7 +72,7 @@ const ContactFormWrapper = styled.div`
 
 const Contact = () => {
   const { t } = useTranslation();
-  const { email, voice, openingHours } = useOrganization();
+  const { email, phone, openingHours } = useOrganization();
 
   return (
     <>
@@ -88,14 +88,16 @@ const Contact = () => {
         )}
 
         <Card title={t('contacts.call_us')}>
-          <OrganizationPhones phones={voice.phone} />
+          <OrganizationPhones phones={phone} />
           <OrganizationEmail email={email} />
           {/* <OrganizationSite /> */}
         </Card>
 
+        {/*
         <Card title=" ">
           <OrganizationCloudPhones voice={voice} />
         </Card>
+        */}
       </CardsWrapper>
 
       <Wrapper>

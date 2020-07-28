@@ -5,13 +5,13 @@ const useOrganization = () => {
     query OrganizationQuery {
       organization: yaml(fields: { type: { eq: "contacts" } }) {
         email
-        fax
         geo {
           latitude
           longitude
         }
+        phone
+        fax
         voice {
-          phone
           skype
           telegram
           viber

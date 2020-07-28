@@ -46,8 +46,7 @@ const SEO = ({ title, description, locale, pathname, canonical, noindex = false,
     description: i18n.locales[locale].siteDescription,
     url: homeURL,
     email: organization.email ? organization.email.join() : null,
-    telephone:
-      organization.voice && organization.voice.phone ? organization.voice.phone.join() : null,
+    telephone: organization.phone ? organization.phone.join() : null,
     image: config.siteBusinessPhoto,
     logo: config.siteLogo,
   };

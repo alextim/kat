@@ -123,9 +123,6 @@ const geo = {
 };
 
 const voice = {
-  phone: {
-    type: '[String]',
-  },
   skype: {
     type: 'String',
   },
@@ -141,6 +138,9 @@ const voice = {
 };
 
 const contacts = {
+  phone: {
+    type: '[String]',
+  },
   voice: {
     type: 'Voice',
   },

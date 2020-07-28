@@ -65,7 +65,7 @@ const styleColophonBottom = {
 
 const FooterInner = () => {
   const { t } = useTranslation();
-  const { email, voice } = useOrganization();
+  const { email, phone } = useOrganization();
   return (
     <React.Fragment>
       <Container sx={styleWidgetArea}>
@@ -89,10 +89,12 @@ const FooterInner = () => {
 
         <WidgetWrapper extraStyle={styleWidgetAddr2}>
           <FooterWidget title={t('footer.call_us')}>
-            <OrganizationPhones phones={voice.phone} />
+            <OrganizationPhones phones={phone} />
             <OrganizationEmail email={email} />
-            {/* <OrganizationSite /> */}
-            {/* <OrganizationCloudPhones voice={voice} /> */}
+            {/*
+            <OrganizationSite />
+            <OrganizationCloudPhones voice={voice} />
+            */}
           </FooterWidget>
         </WidgetWrapper>
       </Container>
